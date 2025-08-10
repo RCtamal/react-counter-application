@@ -5,8 +5,11 @@ interface ClassCounterState {
   count: number;
 }
 
-export class ClassCounter extends Component<{}, ClassCounterState> {
-  constructor(props: {}) {
+// Define empty props interface
+type EmptyProps = Record<string, never>;
+
+export class ClassCounter extends Component<EmptyProps, ClassCounterState> {
+  constructor(props: EmptyProps) {
     super(props);
     this.state = {
       count: 0,
