@@ -1,4 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Assignment-1 Counter Application
+
+A React counter application that demonstrates both class and functional component implementations with a beautiful UI.
+
+## Assignment Task
+
+This project was built based on the following requirements:
+
+- Create an attractive UI
+- The counter cannot be less than 0
+- Provide proper headings for Class and Function Components
+- Show both components in a row
+- Display main heading "Assignment-2 Counter Application"
+
+## Features
+
+- **Beautiful UI**: Modern gradients with smooth animations
+- **Range Control**: Counter stays between 0-100
+- **Quick Actions**: ±1, ±10, and Reset buttons
+- **Class Component**: Traditional React class syntax implementation
+- **Function Component**: Modern React hooks approach
+- **Smart Buttons**: Auto-disable at limits
+
+## Technologies Used
+
+- React
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Bootstrap
 
 ## Getting Started
 
@@ -16,25 +45,24 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Implementation Details
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The project contains two counter implementations:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+1. **Class Component Counter**: Uses traditional React class syntax with state management
+2. **Function Component Counter**: Uses modern React hooks (useState) for state management
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Both counters feature the same functionality:
+- Increment/decrement by 1 or 10
+- Reset button to set counter back to 0
+- Buttons disable automatically when reaching limits (0-100)
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `src/pages/component/ClassCounter.tsx`: Class-based counter implementation
+- `src/pages/component/FunctionCounter.tsx`: Function-based counter implementation
+- `src/pages/index.tsx`: Main page that displays both counters
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Tamal Roy Chowdhury
