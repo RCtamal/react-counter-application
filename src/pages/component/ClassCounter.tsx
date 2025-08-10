@@ -1,7 +1,7 @@
 import { Component } from "react";
 
 export class ClassCounter extends Component {
-  constructor(props) {
+  constructor(props:any) {
     super(props);
     this.state = {
       count: 0,
