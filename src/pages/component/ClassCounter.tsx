@@ -1,20 +1,25 @@
 import { Component } from "react";
 
-export class ClassCounter extends Component {
-  constructor(props:any) {
+// Define state interface
+interface ClassCounterState {
+  count: number;
+}
+
+export class ClassCounter extends Component<{}, ClassCounterState> {
+  constructor(props: {}) {
     super(props);
     this.state = {
       count: 0,
     };
   }
 
-  increment = (value = 1) => {
+  increment = (value: number = 1) => {
     this.setState((prevState) => ({
       count: Math.min(100, prevState.count + value),
     }));
   };
 
-  decrement = (value = 1) => {
+  decrement = (value: number = 1) => {
     this.setState((prevState) => ({
       count: Math.max(0, prevState.count - value),
     }));
